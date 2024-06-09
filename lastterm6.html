@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONG RANGKING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/lastterm.css">
+    <link rel="shortcut icon" href="img/music.jpg">
+</head>
+<body>
+    <div id="side" class="sidebar">
+        <a href="#" class="close" onclick="closeside()">&times;</a>
+        <a href="#" onclick="opensub1()" id="main1">K-POP</a>
+        <audio class="audioplay1" src="audio/ihadsomehelp.mp3" ></audio>
+        <audio class="audioplay2" src="audio/notlikeus.mp3"></audio>
+        <audio class="audioplay3" src="audio/million.mp3"></audio>
+        <audio class="audioplay4" src="audio/abarsong.mp3"></audio>
+        <audio class="audioplay5" src="audio/espresso.mp3"></audio>
+        <audio class="audioplay6" src="audio/pinkskies.mp3"></audio>
+        <audio class="audioplay7" src="audio/losecontrol.mp3"></audio>
+        <audio class="audioplay8" src="audio/toosweet.mp3"></audio>
+        <audio class="audioplay9" src="audio/beautiful.mp3"></audio>
+        <audio class="audioplay10" src="audio/lunch.mp3"></audio>
+                <ul id="sub1">
+                    <li><a href="lastterm2.html">TOP10</a></li>
+                    <li><a href="lastterm3.html">QUIZ</a></li>
+                    <li><a href="#">준비중</a></li>
+                </ul>
+        <a href="#" onclick="opensub2()" id="main2">POP</a>
+                <ul id="sub2">
+                    <li><a href="lastterm5.html">TOP10</a></li>
+                    <li><a href="lastterm6.html">QUIZ</a></li>
+                    <li><a href="#">준비중</a></li>
+                </ul>
+        <a href="#" onclick="opensub3()"id="main3">J-POP</a>
+                <ul id="sub3">
+                    <li><a href="lastterm8.html">TOP10</a></li>
+                    <li><a href="lastterm9.html">QUIZ</a></li>
+                    <li><a href="#">준비중</a></li>
+                </ul>
+    </div>
+    <div id="main">
+        <div onclick="openside()" class="hamburger">&#9776;</div>
+        <a href="lastterm.html" class="logo"><img src="img/music.jpg"></a>
+        <div class="name">POP QUIZ</div>
+        <div class="audiobox">
+            <div class="audio11">
+                <div class="audioend" id="audioend"></div>
+            </div>
+            <div class="audio10" id="audio010">
+                <div class="buttonbox">
+                    <div class="stopbutton" id="stopbutton10" onclick="stopaudio10()">노래<br>정지</div>
+                    <div class="playbutton" id="playbutton10" onclick="playaudio10()" >노래<br>재생</div>
+                </div>
+                <div class="mainmenu">
+                    <div class="answer">문제10.</div>
+                    <input type="text" class="textbox" id="textbox10" onkeypress="submit10(event)" placeholder="노래를 듣고 노래 제목을 입력해주세요">
+                </div>
+                <div class="volume2">
+                    <div>Volume</div>
+                    <input type="range" id="volumerange10" min="0" max="1" step="0.01" value="0.2">
+                </div>
+            </div>
+            <div class="audio9" id="audio09">
+                <div class="buttonbox">
+                    <div class="stopbutton" id="stopbutton9" onclick="stopaudio9()">노래<br>정지</div>
+                    <div class="playbutton" id="playbutton9" onclick="playaudio9()" >노래<br>재생</div>
+                </div>
+                <div class="mainmenu">
+                    <div class="answer">문제9.</div>
+                    <input type="text" class="textbox" id="textbox9" onkeypress="submit9(event)" placeholder="노래를 듣고 노래 제목을 입력해주세요">
+                </div>
+                <div class="volume2">
+                    <div>Volume</div>
+                    <input type="range" id="volumerange9" min="0" max="1" step="0.01" value="0.2">
+                </div>
+            </div>
+            <div class="audio8" id="audio08">
+                <div class="buttonbox">
+                    <div class="stopbutton" id="stopbutton8" onclick="stopaudio8()">노래<br>정지</div>
+                    <div class="playbutton" id="playbutton8" onclick="playaudio8()" >노래<br>재생</div>
+                </div>
+                <div class="mainmenu">
+                    <div class="answer">문제8.</div>
+                    <input type="text" class="textbox" id="textbox8" onkeypress="submit8(event)" placeholder="노래를 듣고 노래 제목을 입력해주세요">
+                </div>
+                <div class="volume2">
+                    <div>Volume</div>
+                    <input type="range" id="volumerange8" min="0" max="1" step="0.01" value="0.2">
+                </div>
+            </div>
+            <div class="audio7" id="audio07">
+                <div class="buttonbox">
+                    <div class="stopbutton" id="stopbutton7" onclick="stopaudio7()">노래<br>정지</div>
+                    <div class="playbutton" id="playbutton7" onclick="playaudio7()" >노래<br>재생</div>
+                </div>
+                <div class="mainmenu">
+                    <div class="answer">문제7.</div>
+                    <input type="text" class="textbox" id="textbox7" onkeypress="submit7(event)" placeholder="노래를 듣고 노래 제목을 입력해주세요">
+                </div>
+                <div class="volume2">
+                    <div>Volume</div>
+                    <input type="range" id="volumerange7" min="0" max="1" step="0.01" value="0.2">
+                </div>
+            </div>
+            <div class="audio6" id="audio06">
+                <div class="buttonbox">
+                    <div class="stopbutton" id="stopbutton6" onclick="stopaudio6()">노래<br>정지</div>
+                    <div class="playbutton" id="playbutton6" onclick="playaudio6()" >노래<br>재생</div>
+                </div>
+                <div class="mainmenu">
+                    <div class="answer">문제6.</div>
+                    <input type="text" class="textbox" id="textbox6" onkeypress="submit6(event)" placeholder="노래를 듣고 노래 제목을 입력해주세요">
+                </div>
+                <div class="volume2">
+                    <div>Volume</div>
+                    <input type="range" id="volumerange6" min="0" max="1" step="0.01" value="0.2">
+                </div>
+            </div>
+            <div class="audio5" id="audio05">
+                <div class="buttonbox">
+                    <div class="stopbutton" id="stopbutton5" onclick="stopaudio5()">노래<br>정지</div>
+                    <div class="playbutton" id="playbutton5" onclick="playaudio5()" >노래<br>재생</div>
+                </div>
+                <div class="mainmenu">
+                    <div class="answer">문제5.</div>
+                    <input type="text" class="textbox" id="textbox5" onkeypress="submit5(event)" placeholder="노래를 듣고 노래 제목을 입력해주세요">
+                </div>
+                <div class="volume2">
+                    <div>Volume</div>
+                    <input type="range" id="volumerange5" min="0" max="1" step="0.01" value="0.2">
+                </div>
+            </div>
+            <div class="audio4" id="audio04">
+                <div class="buttonbox">
+                    <div class="stopbutton" id="stopbutton4" onclick="stopaudio4()">노래<br>정지</div>
+                    <div class="playbutton" id="playbutton4" onclick="playaudio4()" >노래<br>재생</div>
+                </div>
+                <div class="mainmenu">
+                    <div class="answer">문제4.</div>
+                    <input type="text" class="textbox" id="textbox4" onkeypress="submit4(event)" placeholder="노래를 듣고 노래 제목을 입력해주세요">
+                </div>
+                <div class="volume2">
+                    <div>Volume</div>
+                    <input type="range" id="volumerange4" min="0" max="1" step="0.01" value="0.2">
+                </div>
+            </div>
+            <div class="audio3" id="audio03">
+                <div class="buttonbox">
+                    <div class="stopbutton" id="stopbutton3" onclick="stopaudio3()">노래<br>정지</div>
+                    <div class="playbutton" id="playbutton3" onclick="playaudio3()" >노래<br>재생</div>
+                </div>
+                <div class="mainmenu">
+                    <div class="answer">문제3.</div>
+                    <input type="text" class="textbox" id="textbox3" onkeypress="submit3(event)" placeholder="노래를 듣고 노래 제목을 입력해주세요">
+                </div>
+                <div class="volume2">
+                    <div>Volume</div>
+                    <input type="range" id="volumerange3" min="0" max="1" step="0.01" value="0.2">
+                </div>
+            </div>
+            <div class="audio2" id="audio02">
+                <div class="buttonbox">
+                    <div class="stopbutton" id="stopbutton2" onclick="stopaudio2()">노래<br>정지</div>
+                    <div class="playbutton" id="playbutton2" onclick="playaudio2()" >노래<br>재생</div>
+                </div>
+                <div class="mainmenu">
+                    <div class="answer">문제2.</div>
+                    <input type="text" class="textbox" id="textbox2" onkeypress="submit2(event)" placeholder="노래를 듣고 노래 제목을 입력해주세요">
+                </div>
+                <div class="volume2">
+                    <div>Volume</div>
+                    <input type="range" id="volumerange2" min="0" max="1" step="0.01" value="0.2">
+                </div>  
+            </div>
+            <div class="audio1" id="audio01">
+                <div class="buttonbox">
+                    <div class="stopbutton" id="stopbutton1" onclick="stopaudio1()">노래<br>정지</div>
+                    <div class="playbutton" id="playbutton1" onclick="playaudio1()" >노래<br>재생</div>
+                </div>
+                <div class="mainmenu">
+                    <div class="answer">문제1.</div>
+                    <input type="text" class="textbox" id="textbox" onkeypress="submit(event)" placeholder="노래를 듣고 노래 제목을 입력해주세요">
+                </div>
+                <div class="volume2">
+                    <div>Volume</div>
+                    <input type="range" id="volumerange1" min="0" max="1" step="0.01" value="0.2">
+                </div>  
+            </div>
+            <div class="submit" id="submit">정답</div> 
+            <div class="fale" id="fale">오답</div>
+        </div>
+        <div class="returnpage" onclick="returnpage()">돌아가기</div> 
+    </div>
+    
+    
+    <script>
+        function openside() {
+          document.getElementById("side").style.width = "15vw";
+          document.getElementById("main").style.marginLeft = "15vw";
+        }
+        
+        function closeside() {
+          side.style.width = "0";
+          main.style.marginLeft= "0";
+        } 
+        function opensub1(){
+            if(document.getElementById("sub1").style.display==="block"){
+                sub1.style.display="none"
+            }
+            else{
+                sub1.style.display="block"
+            }
+        }
+        function opensub2(){
+            if(document.getElementById("sub2").style.display==="block"){
+                sub2.style.display="none"
+            }
+            else{
+                sub2.style.display="block"
+            }
+        }
+        function opensub3(){
+            if(document.getElementById("sub3").style.display==="block"){
+                sub3.style.display="none"
+            }
+            else{
+                sub3.style.display="block"    
+            }
+        }
+        function closesub(){
+            sub1.style.display="none"
+            sub2.style.display="none"
+            sub3.style.display="none"
+        }
+
+        const volumeslider1 = document.getElementById('volumerange1');
+        const volumeslider2 = document.getElementById('volumerange2');
+        const volumeslider3 = document.getElementById('volumerange3');
+        const volumeslider4 = document.getElementById('volumerange4');
+        const volumeslider5 = document.getElementById('volumerange5');
+        const volumeslider6 = document.getElementById('volumerange6');
+        const volumeslider7 = document.getElementById('volumerange7');
+        const volumeslider8 = document.getElementById('volumerange8');
+        const volumeslider9 = document.getElementById('volumerange9');
+        const volumeslider10 = document.getElementById('volumerange10');
+
+        volumeslider1.addEventListener('change',function(){
+            stopaudio1()
+            setTimeout(function(){
+                playaudio1()
+            },1)
+        })
+        volumeslider2.addEventListener('change',function(){
+            stopaudio2()
+            setTimeout(function(){
+                playaudio2()
+            },1)
+        })
+        volumeslider3.addEventListener('change',function(){
+            stopaudio3()
+            setTimeout(function(){
+                playaudio3()
+            },1)
+        })
+        volumeslider4.addEventListener('change',function(){
+            stopaudio4()
+            setTimeout(function(){
+                playaudio4()
+            },1)
+        })
+        volumeslider5.addEventListener('change',function(){
+            stopaudio5()
+            setTimeout(function(){
+                playaudio5()
+            },1)
+        })
+        volumeslider6.addEventListener('change',function(){
+            stopaudio6()
+            setTimeout(function(){
+                playaudio6()
+            },1)
+        })
+        volumeslider7.addEventListener('change',function(){
+            stopaudio7()
+            setTimeout(function(){
+                playaudio7()
+            },1)
+        })
+        volumeslider8.addEventListener('change',function(){
+            stopaudio8()
+            setTimeout(function(){
+                playaudio8()
+            },1)
+        })
+        volumeslider9.addEventListener('change',function(){
+            stopaudio9()
+            setTimeout(function(){
+                playaudio9()
+            },1)
+        })
+        volumeslider10.addEventListener('change',function(){
+            stopaudio10()
+            setTimeout(function(){
+                playaudio10()
+            },1)
+        })
+        
+        let delrandom=[];
+        let newrandom=[];
+        var audioname;
+        function playaudio(){
+            let randomif;
+            do {
+                randomif = Math.ceil(Math.random() * 10);
+            } while (delrandom.includes(randomif));
+            delrandom.push(randomif);
+            return randomif;
+            }
+            for (let i = 1; i < 11; i++) {
+                playaudio();
+                console.log(delrandom)
+            }
+        const playbutton1=document.getElementById('playbutton1');
+        const stopbutton1=document.getElementById('stopbutton1');
+        const playbutton2=document.getElementById('playbutton2');
+        const stopbutton2=document.getElementById('stopbutton2');
+        const playbutton3=document.getElementById('playbutton3');
+        const stopbutton3=document.getElementById('stopbutton3');
+        const playbutton4=document.getElementById('playbutton4');
+        const stopbutton4=document.getElementById('stopbutton4');
+        const playbutton5=document.getElementById('playbutton5');
+        const stopbutton5=document.getElementById('stopbutton5');
+        const playbutton6=document.getElementById('playbutton6');
+        const stopbutton6=document.getElementById('stopbutton6');
+        const playbutton7=document.getElementById('playbutton7');
+        const stopbutton7=document.getElementById('stopbutton7');
+        const playbutton8=document.getElementById('playbutton8');
+        const stopbutton8=document.getElementById('stopbutton8');
+        const playbutton9=document.getElementById('playbutton9');
+        const stopbutton9=document.getElementById('stopbutton9');
+        const playbutton10=document.getElementById('playbutton10');
+        const stopbutton10=document.getElementById('stopbutton10');
+        let score=0;
+        let falescore=0;
+        let result0=null;
+        let result0_1=null;
+        const results={
+            result1:"ihadsomehelp",
+            result1_1:"아이해드썸헬프",
+            result2:"notlikeus",
+            result2_1:"낫라이크어스",
+            result3:"milliondollarbaby",
+            result3_1:"밀리언달러베이비",
+            result4:"abarsong",
+            result4_1:"어바송",
+            result5:"espresso",
+            result5_1:"에스프레소",
+            result6:"pinkskies",
+            result6_1:"핑크스키스",
+            result7:"losecontrol",
+            result7_1:"루즈컨트롤",
+            result8:"toosweet",
+            result8_1:"투스윗",
+            result9:"beautifulthings",
+            result9_1:"뷰티플띵스",
+            result10:"lunch",
+            result10_1:"런치",
+        }
+        
+//1
+        function playaudio1(){
+            playbutton1.style.display="none"
+            stopbutton1.style.display="block"
+            audioname=".audioplay"+delrandom[0]
+            const audioplay=document.querySelector(audioname);
+            audioplay.play();
+            audioplay.loop = true;
+            audioplay.volume=volumeslider1.value;
+        }
+        function stopaudio1(){
+            playbutton1.style.display="block"
+            stopbutton1.style.display="none"
+            const audioplay=document.querySelector(audioname);
+            audioplay.pause();
+        }
+        
+        function submit(ent){
+            let submittext=document.getElementById("textbox").value;
+            submittext=submittext.toLowerCase().split(' ').join('');
+            if(ent.keyCode==13){
+                console.log(submittext)
+                resultif(submittext)
+            }
+        }
+        function resultif(submittext){
+            result0=results["result"+delrandom[0]]
+            result0_1=results["result"+delrandom[0]+"_1"]
+            console.log(result0)
+            if(result0===submittext.toLowerCase().trim()||result0_1===submittext.toLowerCase().trim()){
+                console.log("정답")
+                score+=1;
+                const submitdiv=document.getElementById('submit');
+                submitdiv.style.display="block"
+                setTimeout(function(){
+                    submitdiv.style.opacity="1"
+                    const audio01=document.getElementById('audio01');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        submitdiv.style.opacity="0"
+                        setTimeout(function(){
+                            submitdiv.style.display="none"
+                            stopaudio1()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+            else{
+                console.log("오답")
+                falescore+=1;
+                const fale=document.getElementById('fale');
+                fale.style.display="block"
+                setTimeout(function(){
+                    fale.style.opacity="1"
+                    const audio01=document.getElementById('audio01');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        fale.style.opacity="0"
+                        setTimeout(function(){
+                            fale.style.display="none"
+                            stopaudio1()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+        }
+//2
+        function playaudio2(){
+            playbutton2.style.display="none"
+            stopbutton2.style.display="block"
+            audioname=".audioplay"+delrandom[1]
+            const audioplay=document.querySelector(audioname);
+            audioplay.play();
+            audioplay.loop = true;
+            audioplay.volume=volumeslider2.value;
+        }
+        function stopaudio2(){
+            playbutton2.style.display="block"
+            stopbutton2.style.display="none"
+            const audioplay=document.querySelector(audioname);
+            audioplay.pause();
+        }
+        
+        function submit2(ent){
+            let submittext=document.getElementById("textbox2").value;
+            submittext=submittext.toLowerCase().split(' ').join('');
+            if(ent.keyCode==13){
+                console.log(submittext)
+                resultif2(submittext)
+            }
+        }
+        function resultif2(submittext){
+            result0=results["result"+delrandom[1]]
+            result0_1=results["result"+delrandom[1]+"_1"]
+            console.log(result0_1)
+            if(result0===submittext.toLowerCase().trim()||result0_1===submittext.toLowerCase().trim()){
+                console.log("정답")
+                score+=1;
+                const submitdiv=document.getElementById('submit');
+                submitdiv.style.display="block"
+                setTimeout(function(){
+                    submitdiv.style.opacity="1"
+                    const audio01=document.getElementById('audio02');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        submitdiv.style.opacity="0"
+                        setTimeout(function(){
+                            submitdiv.style.display="none"
+                            stopaudio2()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+            else{
+                console.log("오답")
+                falescore+=1;
+                const fale=document.getElementById('fale');
+                fale.style.display="block"
+                setTimeout(function(){
+                    fale.style.opacity="1"
+                    const audio01=document.getElementById('audio02');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        fale.style.opacity="0"
+                        setTimeout(function(){
+                            fale.style.display="none"
+                            stopaudio2()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+        }
+//3
+        function playaudio3(){
+            playbutton3.style.display="none"
+            stopbutton3.style.display="block"
+            audioname=".audioplay"+delrandom[2]
+            const audioplay=document.querySelector(audioname);
+            audioplay.play();
+            audioplay.loop = true;
+            audioplay.volume=volumeslider3.value;
+        }
+        function stopaudio3(){
+            playbutton3.style.display="block"
+            stopbutton3.style.display="none"
+            const audioplay=document.querySelector(audioname);
+            audioplay.pause();
+        }
+        
+        function submit3(ent){
+            let submittext=document.getElementById("textbox3").value;
+            submittext=submittext.toLowerCase().split(' ').join('');
+            if(ent.keyCode==13){
+                console.log(submittext)
+                resultif3(submittext)
+            }
+        }
+        function resultif3(submittext){
+            result0=results["result"+delrandom[2]]
+            result0_1=results["result"+delrandom[2]+"_1"]
+            console.log(result0_1)
+            if(result0===submittext.toLowerCase().trim()||result0_1===submittext.toLowerCase().trim()){
+                console.log("정답")
+                score+=1;
+                const submitdiv=document.getElementById('submit');
+                submitdiv.style.display="block"
+                setTimeout(function(){
+                    submitdiv.style.opacity="1"
+                    const audio01=document.getElementById('audio03');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        submitdiv.style.opacity="0"
+                        setTimeout(function(){
+                            submitdiv.style.display="none"
+                            stopaudio3()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+            else{
+                console.log("오답")
+                falescore+=1;
+                const fale=document.getElementById('fale');
+                fale.style.display="block"
+                setTimeout(function(){
+                    fale.style.opacity="1"
+                    const audio01=document.getElementById('audio03');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        fale.style.opacity="0"
+                        setTimeout(function(){
+                            fale.style.display="none"
+                            stopaudio3()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+        }
+//4
+        function playaudio4(){
+            playbutton4.style.display="none"
+            stopbutton4.style.display="block"
+            audioname=".audioplay"+delrandom[3]
+            const audioplay=document.querySelector(audioname);
+            audioplay.play();
+            audioplay.loop = true;
+            audioplay.volume=volumeslider4.value;
+        }
+        function stopaudio4(){
+            playbutton4.style.display="block"
+            stopbutton4.style.display="none"
+            const audioplay=document.querySelector(audioname);
+            audioplay.pause();
+        }
+        
+        function submit4(ent){
+            let submittext=document.getElementById("textbox4").value;
+            submittext=submittext.toLowerCase().split(' ').join('');
+            if(ent.keyCode==13){
+                console.log(submittext)
+                resultif4(submittext)
+            }
+        }
+        function resultif4(submittext){
+            result0=results["result"+delrandom[3]]
+            result0_1=results["result"+delrandom[3]+"_1"]
+            console.log(result0_1)
+            if(result0===submittext.toLowerCase().trim()||result0_1===submittext.toLowerCase().trim()){
+                console.log("정답")
+                score+=1;
+                const submitdiv=document.getElementById('submit');
+                submitdiv.style.display="block"
+                setTimeout(function(){
+                    submitdiv.style.opacity="1"
+                    const audio01=document.getElementById('audio04');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        submitdiv.style.opacity="0"
+                        setTimeout(function(){
+                            submitdiv.style.display="none"
+                            stopaudio4()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+            else{
+                console.log("오답")
+                falescore+=1;
+                const fale=document.getElementById('fale');
+                fale.style.display="block"
+                setTimeout(function(){
+                    fale.style.opacity="1"
+                    const audio01=document.getElementById('audio04');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        fale.style.opacity="0"
+                        setTimeout(function(){
+                            fale.style.display="none"
+                            stopaudio4()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+        }
+
+//5
+        function playaudio5(){
+            playbutton5.style.display="none"
+            stopbutton5.style.display="block"
+            audioname=".audioplay"+delrandom[4]
+            const audioplay=document.querySelector(audioname);
+            audioplay.play();
+            audioplay.loop = true;
+            audioplay.volume=volumeslider5.value;
+        }
+        function stopaudio5(){
+            playbutton5.style.display="block"
+            stopbutton5.style.display="none"
+            const audioplay=document.querySelector(audioname);
+            audioplay.pause();
+        }
+        
+        function submit5(ent){
+            let submittext=document.getElementById("textbox5").value;
+            submittext=submittext.toLowerCase().split(' ').join('');
+            if(ent.keyCode==13){
+                console.log(submittext)
+                resultif5(submittext)
+            }
+        }
+        function resultif5(submittext){
+            result0=results["result"+delrandom[4]]
+            result0_1=results["result"+delrandom[4]+"_1"]
+            console.log(result0_1)
+            if(result0===submittext.toLowerCase().trim()||result0_1===submittext.toLowerCase().trim()){
+                console.log("정답")
+                score+=1;
+                const submitdiv=document.getElementById('submit');
+                submitdiv.style.display="block"
+                setTimeout(function(){
+                    submitdiv.style.opacity="1"
+                    const audio01=document.getElementById('audio05');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        submitdiv.style.opacity="0"
+                        setTimeout(function(){
+                            submitdiv.style.display="none"
+                            stopaudio5()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+            else{
+                console.log("오답")
+                falescore+=1;
+                const fale=document.getElementById('fale');
+                fale.style.display="block"
+                setTimeout(function(){
+                    fale.style.opacity="1"
+                    const audio01=document.getElementById('audio05');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        fale.style.opacity="0"
+                        setTimeout(function(){
+                            fale.style.display="none"
+                            stopaudio5()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+        }
+//6
+        function playaudio6(){
+            playbutton6.style.display="none"
+            stopbutton6.style.display="block"
+            audioname=".audioplay"+delrandom[5]
+            const audioplay=document.querySelector(audioname);
+            audioplay.play();
+            audioplay.loop = true;
+            audioplay.volume=volumeslider6.value;
+        }
+        function stopaudio6(){
+            playbutton6.style.display="block"
+            stopbutton6.style.display="none"
+            const audioplay=document.querySelector(audioname);
+            audioplay.pause();
+        }
+        
+        function submit6(ent){
+            let submittext=document.getElementById("textbox6").value;
+            submittext=submittext.toLowerCase().split(' ').join('');
+            if(ent.keyCode==13){
+                console.log(submittext)
+                resultif6(submittext)
+            }
+        }
+        function resultif6(submittext){
+            result0=results["result"+delrandom[5]]
+            result0_1=results["result"+delrandom[5]+"_1"]
+            console.log(result0_1)
+            if(result0===submittext.toLowerCase().trim()||result0_1===submittext.toLowerCase().trim()){
+                console.log("정답")
+                score+=1;
+                const submitdiv=document.getElementById('submit');
+                submitdiv.style.display="block"
+                setTimeout(function(){
+                    submitdiv.style.opacity="1"
+                    const audio01=document.getElementById('audio06');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        submitdiv.style.opacity="0"
+                        setTimeout(function(){
+                            submitdiv.style.display="none"
+                            stopaudio6()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+            else{
+                console.log("오답")
+                falescore+=1;
+                const fale=document.getElementById('fale');
+                fale.style.display="block"
+                setTimeout(function(){
+                    fale.style.opacity="1"
+                    const audio01=document.getElementById('audio06');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        fale.style.opacity="0"
+                        setTimeout(function(){
+                            fale.style.display="none"
+                            stopaudio6()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+        }
+//7
+        function playaudio7(){
+            playbutton7.style.display="none"
+            stopbutton7.style.display="block"
+            audioname=".audioplay"+delrandom[6]
+            const audioplay=document.querySelector(audioname);
+            audioplay.play();
+            audioplay.loop = true;
+            audioplay.volume=volumeslider7.value;
+        }
+        function stopaudio7(){
+            playbutton7.style.display="block"
+            stopbutton7.style.display="none"
+            const audioplay=document.querySelector(audioname);
+            audioplay.pause();
+        }
+        
+        function submit7(ent){
+            let submittext=document.getElementById("textbox7").value;
+            submittext=submittext.toLowerCase().split(' ').join('');
+            if(ent.keyCode==13){
+                console.log(submittext)
+                resultif7(submittext)
+            }
+        }
+        function resultif7(submittext){
+            result0=results["result"+delrandom[6]]
+            result0_1=results["result"+delrandom[6]+"_1"]
+            console.log(result0_1)
+            if(result0===submittext.toLowerCase().trim()||result0_1===submittext.toLowerCase().trim()){
+                console.log("정답")
+                score+=1;
+                const submitdiv=document.getElementById('submit');
+                submitdiv.style.display="block"
+                setTimeout(function(){
+                    submitdiv.style.opacity="1"
+                    const audio01=document.getElementById('audio07');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        submitdiv.style.opacity="0"
+                        setTimeout(function(){
+                            submitdiv.style.display="none"
+                            stopaudio7()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+            else{
+                console.log("오답")
+                falescore+=1;
+                const fale=document.getElementById('fale');
+                fale.style.display="block"
+                setTimeout(function(){
+                    fale.style.opacity="1"
+                    const audio01=document.getElementById('audio07');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        fale.style.opacity="0"
+                        setTimeout(function(){
+                            fale.style.display="none"
+                            stopaudio7()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+        }
+//8
+        function playaudio8(){
+            playbutton8.style.display="none"
+            stopbutton8.style.display="block"
+            audioname=".audioplay"+delrandom[7]
+            const audioplay=document.querySelector(audioname);
+            audioplay.play();
+            audioplay.loop = true;
+            audioplay.volume=volumeslider8.value;
+        }
+        function stopaudio8(){
+            playbutton8.style.display="block"
+            stopbutton8.style.display="none"
+            const audioplay=document.querySelector(audioname);
+            audioplay.pause();
+        }
+        
+        function submit8(ent){
+            let submittext=document.getElementById("textbox8").value;
+            submittext=submittext.toLowerCase().split(' ').join('');
+            if(ent.keyCode==13){
+                console.log(submittext)
+                resultif8(submittext)
+            }
+        }
+        function resultif8(submittext){
+            result0=results["result"+delrandom[7]]
+            result0_1=results["result"+delrandom[7]+"_1"]
+            console.log(result0_1)
+            if(result0===submittext.toLowerCase().trim()||result0_1===submittext.toLowerCase().trim()){
+                console.log("정답")
+                score+=1;
+                const submitdiv=document.getElementById('submit');
+                submitdiv.style.display="block"
+                setTimeout(function(){
+                    submitdiv.style.opacity="1"
+                    const audio01=document.getElementById('audio08');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        submitdiv.style.opacity="0"
+                        setTimeout(function(){
+                            submitdiv.style.display="none"
+                            stopaudio8()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+            else{
+                console.log("오답")
+                falescore+=1;
+                const fale=document.getElementById('fale');
+                fale.style.display="block"
+                setTimeout(function(){
+                    fale.style.opacity="1"
+                    const audio01=document.getElementById('audio08');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        fale.style.opacity="0"
+                        setTimeout(function(){
+                            fale.style.display="none"
+                            stopaudio8()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+        }
+//9
+        function playaudio9(){
+            playbutton9.style.display="none"
+            stopbutton9.style.display="block"
+            audioname=".audioplay"+delrandom[8]
+            const audioplay=document.querySelector(audioname);
+            audioplay.play();
+            audioplay.loop = true;
+            audioplay.volume=volumeslider9.value;
+        }
+        function stopaudio9(){
+            playbutton9.style.display="block"
+            stopbutton9.style.display="none"
+            const audioplay=document.querySelector(audioname);
+            audioplay.pause();
+        }
+        
+        function submit9(ent){
+            let submittext=document.getElementById("textbox9").value;
+            submittext=submittext.toLowerCase().split(' ').join('');
+            if(ent.keyCode==13){
+                console.log(submittext)
+                resultif9(submittext)
+            }
+        }
+        function resultif9(submittext){
+            result0=results["result"+delrandom[8]]
+            result0_1=results["result"+delrandom[8]+"_1"]
+            console.log(result0_1)
+            if(result0===submittext.toLowerCase().trim()||result0_1===submittext.toLowerCase().trim()){
+                console.log("정답")
+                score+=1;
+                const submitdiv=document.getElementById('submit');
+                submitdiv.style.display="block"
+                setTimeout(function(){
+                    submitdiv.style.opacity="1"
+                    const audio01=document.getElementById('audio09');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        submitdiv.style.opacity="0"
+                        setTimeout(function(){
+                            submitdiv.style.display="none"
+                            stopaudio9()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+            else{
+                console.log("오답")
+                falescore+=1;
+                const fale=document.getElementById('fale');
+                fale.style.display="block"
+                setTimeout(function(){
+                    fale.style.opacity="1"
+                    const audio01=document.getElementById('audio09');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        fale.style.opacity="0"
+                        setTimeout(function(){
+                            fale.style.display="none"
+                            stopaudio9()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+        }
+//10
+        function playaudio10(){
+            playbutton10.style.display="none"
+            stopbutton10.style.display="block"
+            audioname=".audioplay"+delrandom[9]
+            const audioplay=document.querySelector(audioname);
+            audioplay.play();
+            audioplay.loop = true;
+            audioplay.volume=volumeslider10.value;
+        }
+        function stopaudio10(){
+            playbutton10.style.display="block"
+            stopbutton10.style.display="none"
+            const audioplay=document.querySelector(audioname);
+            audioplay.pause();
+        }
+        
+        function submit10(ent){
+            let submittext=document.getElementById("textbox10").value;
+            submittext=submittext.toLowerCase().split(' ').join('');
+            if(ent.keyCode==13){
+                console.log(submittext)
+                resultif10(submittext)
+            }
+        }
+        function resultif10(submittext){
+            result0=results["result"+delrandom[9]]
+            result0_1=results["result"+delrandom[9]+"_1"]
+            console.log(result0_1)
+            if(result0===submittext.toLowerCase().trim()||result0_1===submittext.toLowerCase().trim()){
+                console.log("정답")
+                score+=1;
+                const submitdiv=document.getElementById('submit');
+                submitdiv.style.display="block"
+                setTimeout(function(){
+                    submitdiv.style.opacity="1"
+                    const audio01=document.getElementById('audio010');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        submitdiv.style.opacity="0"
+                        setTimeout(function(){
+                            const audioend=document.getElementById('audioend');
+                            audioend.innerText=`${delrandom.length}문제중에\n${score}문제 맞추었고\n${falescore}문제 틀렸습니다`
+                            audioend.style.display="block"
+                            setTimeout(function(){
+                                audioend.style.opacity="1"
+                            },1)
+                            submitdiv.style.display="none"
+                            stopaudio10()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+            else{
+                console.log("오답")
+                falescore+=1;
+                const fale=document.getElementById('fale');
+                fale.style.display="block"
+                setTimeout(function(){
+                    fale.style.opacity="1"
+                    const audio01=document.getElementById('audio010');
+                    audio01.style.display="none"
+                    setTimeout(function(){
+                        fale.style.opacity="0"
+                        setTimeout(function(){
+                            const audioend=document.getElementById('audioend');
+                            audioend.innerText=`${delrandom.length}문제중에\n${score}문제 맞추었고\n${falescore}문제 틀렸습니다`
+                            audioend.style.display="block"
+                            setTimeout(function(){
+                                audioend.style.opacity="1"
+                            },1)
+                            fale.style.display="none"
+                            stopaudio10()
+                        },1001)
+                    },1000) 
+                },1)
+            }
+        }
+        function returnpage(){
+            window.location.href='lastterm9.html';
+        }
+    </script>
+</body>
+</html>

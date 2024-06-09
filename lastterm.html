@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONG RANGKING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/lastterm.css">
+    <link rel="shortcut icon" href="img/music.jpg">
+</head>
+<body>
+    <div id="side" class="sidebar">
+        <a href="#" class="close" onclick="closeside()">&times;</a>
+        <a href="#" onclick="opensub1()" id="main1">K-POP</a>
+                <ul id="sub1">
+                    <li><a href="lastterm2.html">TOP10</a></li>
+                    <li><a href="lastterm3.html">QUIZ</a></li>
+                    <li><a href="#">준비중</a></li>
+                </ul>
+        <a href="#" onclick="opensub2()" id="main2">POP</a>
+                <ul id="sub2">
+                    <li><a href="lastterm5.html">TOP10</a></li>
+                    <li><a href="lastterm6.html">QUIZ</a></li>
+                    <li><a href="#">준비중</a></li>
+                </ul>
+        <a href="#" onclick="opensub3()"id="main3">J-POP</a>
+                <ul id="sub3">
+                    <li><a href="lastterm8.html">TOP10</a></li>
+                    <li><a href="lastterm9.html">QUIZ</a></li>
+                    <li><a href="#">준비중</a></li>
+                </ul>
+    </div>
+    <div id="main">
+        <div onclick="openside()" class="hamburger">&#9776;</div>
+        <a href="lastterm.html" class="logo"><img src="img/music.jpg"></a>
+        <div class="imgsize">
+            <div class="imgbox">
+                <a href="#"><div class="img"><img src="img/kpop.jpeg" alt="이미지1"></div></a>
+                <a href="#"><div class="img"><img src="img/pop.jpeg" alt="이미지2"></div></a>
+                <a href="#"><div class="img"><img src="img/jpop.jpeg" alt="이미지3"></div></a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        function openside() {
+          document.getElementById("side").style.width = "15vw";
+          document.getElementById("main").style.marginLeft = "15vw";
+        }
+        
+        function closeside() {
+          side.style.width = "0";
+          main.style.marginLeft= "0";
+        } 
+        function opensub1(){
+            if(document.getElementById("sub1").style.display==="block"){
+                sub1.style.display="none"
+            }
+            else{
+                sub1.style.display="block"
+            }
+        }
+        function opensub2(){
+            if(document.getElementById("sub2").style.display==="block"){
+                sub2.style.display="none"
+            }
+            else{
+                sub2.style.display="block"
+            }
+        }
+        function opensub3(){
+            if(document.getElementById("sub3").style.display==="block"){
+                sub3.style.display="none"
+            }
+            else{
+                sub3.style.display="block"    
+            }
+        }
+        function closesub(){
+            sub1.style.display="none"
+            sub2.style.display="none"
+            sub3.style.display="none"
+        }
+        const imgbox = document.querySelector(".imgbox"); 
+        let a = 0;
+        setInterval(() => {
+            if(a<2){
+                a++;
+            }   
+            else{
+                a=0;
+            }
+            imgbox.style.marginLeft=-100*a+"vw";
+        },2500);
+    </script>
+</body>
+</html>

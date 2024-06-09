@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONG RANGKING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/lastterm.css">
+    <link rel="shortcut icon" href="img/music.jpg">
+</head>
+<body>
+    <div id="side" class="sidebar">
+        <a href="#" class="close" onclick="closeside()">&times;</a>
+        <a href="#" onclick="opensub1()" id="main1">K-POP</a>
+                <ul id="sub1">
+                    <li><a href="lastterm2.html">TOP10</a></li>
+                    <li><a href="lastterm3.html">QUIZ</a></li>
+                    <li><a href="#">준비중</a></li>
+                </ul>
+        <a href="#" onclick="opensub2()" id="main2">POP</a>
+                <ul id="sub2">
+                    <li><a href="lastterm5.html">TOP10</a></li>
+                    <li><a href="lastterm6.html">QUIZ</a></li>
+                    <li><a href="#">준비중</a></li>
+                </ul>
+        <a href="#" onclick="opensub3()"id="main3">J-POP</a>
+                <ul id="sub3">
+                    <li><a href="lastterm8.html">TOP10</a></li>
+                    <li><a href="lastterm9.html">QUIZ</a></li>
+                    <li><a href="#">준비중</a></li>
+                </ul>
+    </div>
+    <div id="main">
+        <div onclick="openside()" class="hamburger">&#9776;</div>
+        <a href="lastterm.html" class="logo"><img src="img/music.jpg"></a>
+        <div class="name">POP TOP.10</div>
+        
+        <audio class="audioplay1" src="audio/ihadsomehelp.mp3" ></audio>
+        <audio class="audioplay2" src="audio/notlikeus.mp3"></audio>
+        <audio class="audioplay3" src="audio/million.mp3"></audio>
+        <audio class="audioplay4" src="audio/abarsong.mp3"></audio>
+        <audio class="audioplay5" src="audio/espresso.mp3"></audio>
+        <audio class="audioplay6" src="audio/pinkskies.mp3"></audio>
+        <audio class="audioplay7" src="audio/losecontrol.mp3"></audio>
+        <audio class="audioplay8" src="audio/toosweet.mp3"></audio>
+        <audio class="audioplay9" src="audio/beautiful.mp3"></audio>
+        <audio class="audioplay10" src="audio/lunch.mp3"></audio>
+        <div id="wrap">
+            <div class="card">
+                <div class="card_box">
+                    <div class="front">TOP1</div>
+                    <div class="back" onmouseover="playaudio1()" onmouseout="stopaudio1()" title="I Had Some Help-Post Malone(feat.Morgan Wallen)" onclick="window.open('https://www.youtube.com/watch?v=4QIZE708gJ4')">I Had Some Help<br>Post Malone</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_box">
+                    <div class="front">TOP2</div>
+                    <div class="back" onmouseover="playaudio2()" onmouseout="stopaudio2()" title="Not Like Us-Kendrick Lamar" onclick="window.open('https://www.youtube.com/watch?v=T6eK-2OQtew')">Not Like Us<br>Kendrick Lamar</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_box">
+                    <div class="front">TOP3</div>
+                    <div class="back" onmouseover="playaudio3()" onmouseout="stopaudio3()" title="MILLION DOLLAR BABY-Tommy Richman" onclick="window.open('https://www.youtube.com/watch?v=zG5YzRxOcsI')">MILLION DOLLAR BABY<br>Tommy Richman</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_box">
+                    <div class="front">TOP4</div>
+                    <div class="back" onmouseover="playaudio4()" onmouseout="stopaudio4()" title="A Bar Song-Shaboozey" onclick="window.open('https://www.youtube.com/watch?v=t7bQwwqW-Hc')">A Bar Song<br>Shaboozey</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_box">
+                    <div class="front">TOP5</div>
+                    <div class="back" onmouseover="playaudio5()" onmouseout="stopaudio5()" title="Espresso -Sabrina Carpenter" onclick="window.open('https://www.youtube.com/watch?v=eVli-tstM5E')">Espresso<br>Sabrina Carpenter</div>
+                </div>
+            </div>
+        </div>
+        <div id="wrap">
+            <div class="card">
+                <div class="card_box">
+                    <div class="front">TOP6</div>
+                    <div class="back" onmouseover="playaudio6()" onmouseout="stopaudio6()" title="pink skies-LANY" onclick="window.open('https://www.youtube.com/watch?v=eD7kpZRGyGs')">pink skies<br>LANY</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_box">
+                    <div class="front">TOP7</div>
+                    <div class="back" onmouseover="playaudio7()" onmouseout="stopaudio7()" title="Lose Control-Teddy Swims" onclick="window.open('https://www.youtube.com/watch?v=GZ3zL7kT6_c')">Lose Control<br>Teddy Swims</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_box">
+                    <div class="front">TOP8</div>
+                    <div class="back" onmouseover="playaudio8()" onmouseout="stopaudio8()" title="Too Sweet-Hozier" onclick="window.open('https://www.youtube.com/watch?v=NTpbbQUBbuo')">Too Sweet<br>Hozier</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_box">
+                    <div class="front">TOP9</div>
+                    <div class="back" onmouseover="playaudio9()" onmouseout="stopaudio9()" title="Beautiful Things-Benson Boone" onclick="window.open('https://www.youtube.com/watch?v=Oa_RSwwpPaA')">Beautiful Things<br>Benson Boone</audio></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_box">
+                    <div class="front">TOP10</div>
+                    <div class="back" onmouseover="playaudio10()" onmouseout="stopaudio10()" title="LUNCH-Billie Eilish" onclick="window.open('https://www.youtube.com/watch?v=MB3VkzPdgLA')">LUNCH<br>Billie Eilish</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="volume">
+        <div>Volume</div>
+        <input type="range" id="volumerange" min="0" max="1" step="0.01" value="0">
+    </div>
+    <script>
+        function openside() {
+          document.getElementById("side").style.width = "15vw";
+          document.getElementById("main").style.marginLeft = "15vw";
+        }
+        
+        function closeside() {
+          side.style.width = "0";
+          main.style.marginLeft= "0";
+        } 
+        function opensub1(){
+            if(document.getElementById("sub1").style.display==="block"){
+                sub1.style.display="none"
+            }
+            else{
+                sub1.style.display="block"
+            }
+        }
+        function opensub2(){
+            if(document.getElementById("sub2").style.display==="block"){
+                sub2.style.display="none"
+            }
+            else{
+                sub2.style.display="block"
+            }
+        }
+        function opensub3(){
+            if(document.getElementById("sub3").style.display==="block"){
+                sub3.style.display="none"
+            }
+            else{
+                sub3.style.display="block"    
+            }
+        }
+        function closesub(){
+            sub1.style.display="none"
+            sub2.style.display="none"
+            sub3.style.display="none"
+        }
+        //마이크 허용
+        
+
+        const volumeslider = document.getElementById('volumerange');
+        function playaudio1(){
+            const audioplay=document.querySelector(".audioplay1");
+            audioplay.play();
+            audioplay.volume=volumeslider.value;
+        }
+        function stopaudio1(){
+            const audioplay=document.querySelector(".audioplay1");
+            audioplay.pause();
+            audioplay.currentTime = 0;
+        }
+        function playaudio2(){
+            const audioplay=document.querySelector(".audioplay2");
+            audioplay.play();
+            audioplay.volume=volumeslider.value;
+        }
+        function stopaudio2(){
+            const audioplay=document.querySelector(".audioplay2");
+            audioplay.pause();
+            audioplay.currentTime = 0;
+        }
+        function playaudio3(){
+            const audioplay=document.querySelector(".audioplay3");
+            audioplay.play();
+            audioplay.volume=volumeslider.value;
+        }
+        function stopaudio3(){
+            const audioplay=document.querySelector(".audioplay3");
+            audioplay.pause();
+            audioplay.currentTime = 0;
+        }
+        function playaudio4(){
+            const audioplay=document.querySelector(".audioplay4");
+            audioplay.play();
+            audioplay.volume=volumeslider.value;
+        }
+        function stopaudio4(){
+            const audioplay=document.querySelector(".audioplay4");
+            audioplay.pause();
+            audioplay.currentTime = 0;
+        }
+        function playaudio5(){
+            const audioplay=document.querySelector(".audioplay5");
+            audioplay.play();
+            audioplay.volume=volumeslider.value;
+        }
+        function stopaudio5(){
+            const audioplay=document.querySelector(".audioplay5");
+            audioplay.pause();
+            audioplay.currentTime = 0;
+        }
+        function playaudio6(){
+            const audioplay=document.querySelector(".audioplay6");
+            audioplay.play();
+            audioplay.volume=volumeslider.value;
+        }
+        function stopaudio6(){
+            const audioplay=document.querySelector(".audioplay6");
+            audioplay.pause();
+            audioplay.currentTime = 0;
+        }
+        function playaudio7(){
+            const audioplay=document.querySelector(".audioplay7");
+            audioplay.play();
+            audioplay.volume=volumeslider.value;
+        }
+        function stopaudio7(){
+            const audioplay=document.querySelector(".audioplay7");
+            audioplay.pause();
+            audioplay.currentTime = 0;
+        }
+        function playaudio8(){
+            const audioplay=document.querySelector(".audioplay8");
+            audioplay.play();
+            audioplay.volume=volumeslider.value;
+        }
+        function stopaudio8(){
+            const audioplay=document.querySelector(".audioplay8");
+            audioplay.pause();
+            audioplay.currentTime = 0;
+        }
+        function playaudio9(){
+            const audioplay=document.querySelector(".audioplay9");
+            audioplay.play();
+            audioplay.volume=volumeslider.value;
+        }
+        function stopaudio9(){
+            const audioplay=document.querySelector(".audioplay9");
+            audioplay.pause();
+            audioplay.currentTime = 0;
+        }
+        function playaudio10(){
+            const audioplay=document.querySelector(".audioplay10");
+            audioplay.play();
+            audioplay.volume=volumeslider.value;
+        }
+        function stopaudio10(){
+            const audioplay=document.querySelector(".audioplay10");
+            audioplay.pause();
+            audioplay.currentTime = 0;
+        }
+    </script>
+</body>
+</html>
